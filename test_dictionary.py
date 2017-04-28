@@ -3,14 +3,14 @@ from canarydictionary import canarydictionary
 
 def test_dictionary():
 	dictionary = canarydictionary()
-	millo = dictionary['millo']
+	millo = dictionary.searchword('millo')
 	assert millo == 'maiz'
-	papa = dictionary['papa']
+	papa = dictionary.searchword('papa')
 	assert papa == 'patata'
-	baifo = dictionary['baifo']
+	baifo = dictionary.searchword('baifo')
 	assert baifo == 'cabra'
 
 def test_nodictionary():
 	dictionary = canarydictionary()
-	noword = dictionary['noword']
+	noword = dictionary.searchword('noword')
 	assert noword == None
