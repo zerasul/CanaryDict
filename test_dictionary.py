@@ -9,6 +9,8 @@ def test_dictionary():
 	assert papa == 'patata'
 	baifo = dictionary.searchword('baifo')
 	assert baifo == 'cabra'
+	godo = dictionary.searchword('godo')
+	assert godo == 'miguel'
 
 def test_nodictionary():
 	dictionary = canarydictionary()
